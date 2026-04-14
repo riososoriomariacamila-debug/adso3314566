@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01- Emmet</title>
+    <link rel="stylesheet" href="../src/css/01-emmet.css">
+</head>
+<body>
+    <a class="btn-home" href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+    </a>
+    <main>
+        <h1>01- Emmet</h1>
+        <img src="../src/imgs/logo-emmet.svg" alt="Emmet" width="240">
+       <section>
+            <h2>Nesting ></h2>
+            <h4>Example</h4>
+            <p>ul>li>a 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+<li><a href=""></a></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Sibling +</h2>
+            <h4>Example</h4>
+            <p>section+header+nav 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<section></section>
+<header></header>
+<nav></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>Repeat *</h2>
+            <h4>Example</h4>
+            <p>ul>li*3 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Clases .</h2>
+            <h4>Example</h4>
+            <p>div.contendor🔁</p>
+            <h4>Result</h4>
+<xmp>
+<div class="contendor"></div>
+</xmp>
+        </section>
+        <section>
+            <h2>ID #</h2>
+            <h4>Example</h4>
+            <p>nav#menu🔁</p>
+            <h4>Result</h4>
+<xmp>
+<nav id="menU"></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>Text {}</h2>
+            <h4>Example</h4>
+            <p>div{Lorem Ipsum Dolor}🔁</p>
+            <h4>Result</h4>
+<xmp>
+<div>Lorem Ipsum Dolor</div>
+</xmp>
+        </section>
+        <section>
+            <h2>Custom Ahr []</h2>
+            <h4>Example</h4>
+            <p>a[enlace]🔁</p>
+            <h4>Result</h4>
+<xmp>
+<a href="www.google.com"></a>
+</xmp>
+        </section>
+        <section>
+            <h2>Numbering $</h2>
+            <h4>Example</h4>
+            <p>ul.li.num$*3🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul class="li num1"></ul>
+<ul class="li num2"></ul>
+<ul class="li num3"></ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Invert numbs @</h2>
+            <h4>Example</h4>
+            <p>ul>li.num$@-*3🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num2"></li>
+    <li class="num1"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Base Numb @n</h2>
+            <h4>Example</h4>
+            <p>ul>li.num$@3*4🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num4"></li>
+    <li class="num5"></li>
+    <li class="num6"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Leveling ^</h2>
+            <h4>Example</h4>
+            <p>section>article>div^p🔁</p>
+            <h4>Result</h4>
+<xmp>
+<section>
+    <article>
+        <div></div>
+    </article>
+    <p></p>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>Grouping ( )</h2>
+            <h4>Example</h4>
+            <p>(header>nav)+(section>article)🔁</p>
+            <h4>Result</h4>
+<xmp>
+<header>
+    <nav></nav>
+</header>
+<section>
+    <article></article>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>Dummy Text LOREM</h2>
+            <h4>Example</h4>
+            <p>lorem🔁</p>
+            <h4>Result</h4>
+<xmp>
+Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Consequatur
+doloremque, nam id libero ipsam quisquam cumque 
+consequuntur 
+similique eveniet tenetur iusto officia placeat 
+aspernatur,
+atque odio est accusamus repudiandae nostrum.
+</xmp>
+        </section>
+        <section>
+            <h2>RETO</h2>
+<xmp>
+
+header#header>nav.navbar.navbar-inverse>div.
+container>(div.navbar-header>(button
+[type="button"].navbar.navbar-toggle>(span.
+sr-only{Toggle navigation}+span.icon-bar*3)
++a.navbar-brand[href="index.php"]>img
+[src="imgs/logo.png"])+(div.collapse>ul.nav.
+navbar-nav>(li>a[href="index.html"].link
+{Inicio}+li.active.link>a[href="login.
+html"].link{Ingresar}+li>a[href="registro.
+html"].link{Registrarse}+li>a
+[href="contacto.html"].link{Contacto})))
+
+</xmp>
+
+    <h2>RESULTADO</h2>  
+    <img src="../src/imgs/Captura.png" alt="codigo" width="360px">
+
+        </section>
+    </main>
+</body>
+</html>
