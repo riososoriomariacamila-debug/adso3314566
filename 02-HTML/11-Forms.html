@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+    <link rel="stylesheet" href="../src/css/02 -html.css">
+</head>
+<main>
+        <header>
+            <h1>11-forms</h1>
+            <h2>Creates interactive forms for user input.</h2>
+        </header>
+        <section>
+            <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #a05a0a;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        form {
+            background-color: #ffffffa0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        fieldset {
+            border: 1px solid #E44D26;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            color: #E44D26;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 10px 0;
+        }
+        input, select, textarea {
+            background-color: #1e1e1e18;
+            color: white;
+            border: 1px solid #ffffff;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            width: 250px;
+        }
+        button, input[type="submit"], input[type="reset"] {
+            background-color: #E44D26;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: auto;
+        }
+        button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #b33b1a;
+        }
+        .grupo {
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #E44D26;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #02020246;
+        }
+    </style>
+</head>
+<body>
+        <a href="../02-HTML/Index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+        </svg> </a>
+
+<h1>Referencia: Formularios HTML</h1>
+
+<form action="#" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+
+    <fieldset>
+        <legend>Datos del viajero</legend>
+
+        <div class="grupo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre " required autofocus>
+        </div>
+
+        <div class="grupo">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="viajero@email.com" required>
+        </div>
+
+        <div class="grupo">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="99" value="20">
+        </div>
+
+        <div class="grupo">
+            <label for="color">Color de maleta:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div class="grupo">
+            <label for="fecha">Fecha del viaje:</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div class="grupo">
+            <label for="hora">Hora de salida:</label>
+            <input type="time" id="hora" name="hora">
+        </div>
+
+        <div class="grupo">
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana">
+        </div>
+
+        <div class="grupo">
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes">
+        </div>
+
+        <div class="grupo">
+            <label for="rango">Emoción (0-10):</label>
+            <input type="range" id="rango" name="rango" min="0" max="10">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferencias</legend>
+
+        <div class="grupo">
+            <label>Contraseña:</label>
+            <input type="password" name="password" placeholder="*****">
+        </div>
+
+        <div class="grupo">
+            <label>Recibir ofertas:</label>
+            <input type="checkbox" name="ofertas" checked> Sí 
+        </div>
+
+        <div class="grupo">
+            <table>
+                <tr>
+                    <td><label>Tipo de viaje:</label></td>
+                    <td>
+                        <input type="radio" name="tipo" value="aventura"> Aventura
+                        <input type="radio" name="tipo" value="relax"> Relax
+                        <input type="radio" name="tipo" value="cultural"> Cultural
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grupo">
+            <label>Sube tu pasaporte:</label>
+            <input type="file" name="archivo">
+        </div>
+
+        <div class="grupo">
+            <label>Botón:</label>
+            <input type="button" value="Click aquí " onclick="alert('¡Lista para viajar! ✈️')">
+        </div>
+
+        <div class="grupo">
+            <label>Enviar:</label>
+            <input type="image" src="https://via.placeholder.com/100x30?text=Viajar" style="width:100px;">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cuéntanos</legend>
+
+        <div class="grupo">
+            <label for="comentarios">Destino soñado:</label>
+            <textarea id="comentarios" name="comentarios" rows="5" placeholder="¿A dónde quieres viajar? 🌍" required></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Opciones</legend>
+
+        <div class="grupo">
+            <label for="pais">Destino:</label>
+            <select id="pais" name="pais" required>
+                <option disabled selected>Elige un país</option>
+                <option>España 🇪🇸</option>
+                <option>Italia 🇮🇹</option>
+                <option>Japón 🇯🇵</option>
+                <option>Colombia 🇨🇴</option>
+            </select>
+        </div>
+
+        <div class="grupo">
+            <label for="multiples">Actividades:</label>
+            <select id="multiples" name="intereses" size="3" multiple>
+                <option>Aventura</option>
+                <option selected>Turismo</option>
+                <option>Compras</option>
+                <option selected>Fotografía</option>
+            </select>
+        </div>
+
+        <div class="grupo">
+            <label>Deshabilitado:</label>
+            <select disabled>
+                <option>No disponible</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Acciones</legend>
+        <div class="grupo">
+            <input type="submit" value="Reservar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </fieldset>
+
+</form>
+</section>
+    </main>
+</body>
+</html>

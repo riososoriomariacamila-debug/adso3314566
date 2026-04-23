@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla Películas</title>
+    <link rel="stylesheet" href="../src/css/02 -html.css">
+</head>
+<main>
+        <header>
+            <h1>09-tables</h1>
+            <h2>Creates tables for data display.</h2>
+        </header>
+        <section>
+    >
+    <title>Tabla Películas</title>
+</head>
+
+<body>
+
+<style>
+    body{
+        background: linear-gradient(135deg, #1e1e1e, #000000);
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    table{
+        width: 65%;
+        margin: 80px auto;
+        border-collapse: collapse;
+        text-align: center;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(255, 115, 0, 0.3);
+    }
+
+    th{
+        background: linear-gradient(90deg, #ff6a00, #ff914d);
+        padding: 14px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    td{
+        padding: 12px;
+        transition: 0.3s;
+    }
+
+    tr{
+        background-color: #2a2a2a;
+    }
+
+    tr:nth-child(even){
+        background-color: #1f1f1f;
+    }
+
+    tr:hover{
+        background-color: #ff6a00;
+        color: black;
+        transform: scale(1.02);
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+        color: #ff914d;
+        text-shadow: 0 0 10px rgba(255, 115, 0, 0.6);
+    }
+</style>
+</head>
+<body>
+<a href="../02-HTML/Index.html" class="btn-home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+        <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+    </svg>
+</a>
+
+<h1 style="text-align:center;">Películas Famosas</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Película</th>
+            <th>Año de estreno</th>
+            <th>Director</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Titanic</td>
+            <td>1997</td>
+            <td>James Cameron</td>
+        </tr>
+        <tr>
+            <td>Avengers: Endgame</td>
+            <td>2019</td>
+            <td>Anthony y Joe Russo</td>
+        </tr>
+        <tr>
+            <td>El Rey León</td>
+            <td>1994</td>
+            <td>Roger Allers</td>
+        </tr>
+        <tr>
+            <td>Harry Potter y la piedra filosofal</td>
+            <td>2001</td>
+            <td>Chris Columbus</td>
+        </tr>
+        <tr>
+            <td>Frozen</td>
+            <td>2013</td>
+            <td>Chris Buck</td>
+        </tr>
+    </tbody>
+</table>
+            </section>
+    </main>
+</body>
+</html>
