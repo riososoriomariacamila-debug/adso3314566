@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01- Emmet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        body {
+            background-color: #499963;
+            background-image: background-color: #013303;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%230D4401' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230E5503'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+            color: #ffffff;
+            background-attachment: fixed;
+            font-family: "Quicksand";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a.btn-home {
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 50%;
+                position: fixed;
+                display: flex;
+                width: 32px;
+                height: 32px;
+                opacity: .6;
+                padding: 0.4rem;
+                inset: 0.5rem;
+                transition: all 0.2s ease-in;
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+            }
+            section{
+                background-color: rgba(0, 0, 0, 0.305);
+                border-radius: 0.4rem;
+                padding: 0.4rem;
+                width: 360px;
+                h2, h4 {
+                    margin: 0;
+                }
+                h2 {
+                    border-bottom: 2px solid;
+                    padding-bottom: 0.4rem;
+                    margin: 0.4rem;
+                }
+            p {
+                font-size: 1.4rem;
+                padding: 0;
+                margin: 0.4rem 0;
+            }
+            xmp {
+                background-color: rgb(56, 226, 96);
+                color: black;
+                margin: 1;
+                font-size: 0.8rem;
+                padding: 0 0.6rem 0.6rem;
+            }
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="btn-home" href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+    </a>
+    <main>
+        <h1>01- Emmet</h1>
+        <img src="logo-emmet.svg" alt="Emmet" width="240">
+       <section>
+            <h2>Nesting ></h2>
+            <h4>Example</h4>
+            <p>ul>li>a 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+<li><a href=""></a></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Sibling +</h2>
+            <h4>Example</h4>
+            <p>section+header+nav 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<section></section>
+<header></header>
+<nav></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>Repeat *</h2>
+            <h4>Example</h4>
+            <p>ul>li*3 🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Clases .</h2>
+            <h4>Example</h4>
+            <p>div.contendor🔁</p>
+            <h4>Result</h4>
+<xmp>
+<div class="contendor"></div>
+</xmp>
+        </section>
+        <section>
+            <h2>ID #</h2>
+            <h4>Example</h4>
+            <p>nav#menu🔁</p>
+            <h4>Result</h4>
+<xmp>
+<nav id="menU"></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>Text {}</h2>
+            <h4>Example</h4>
+            <p>div{Lorem Ipsum Dolor}🔁</p>
+            <h4>Result</h4>
+<xmp>
+<div>Lorem Ipsum Dolor</div>
+</xmp>
+        </section>
+        <section>
+            <h2>Custom Ahr []</h2>
+            <h4>Example</h4>
+            <p>a[enlace]🔁</p>
+            <h4>Result</h4>
+<xmp>
+<a href="www.google.com"></a>
+</xmp>
+        </section>
+        <section>
+            <h2>Numbering $</h2>
+            <h4>Example</h4>
+            <p>ul.li.num$*3🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul class="li num1"></ul>
+<ul class="li num2"></ul>
+<ul class="li num3"></ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Invert numbs @</h2>
+            <h4>Example</h4>
+            <p>ul>li.num$@-*3🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num2"></li>
+    <li class="num1"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Base Numb @n</h2>
+            <h4>Example</h4>
+            <p>ul>li.num$@3*4🔁</p>
+            <h4>Result</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num4"></li>
+    <li class="num5"></li>
+    <li class="num6"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>Leveling ^</h2>
+            <h4>Example</h4>
+            <p>section>article>div^p🔁</p>
+            <h4>Result</h4>
+<xmp>
+<section>
+    <article>
+        <div></div>
+    </article>
+    <p></p>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>Grouping ( )</h2>
+            <h4>Example</h4>
+            <p>(header>nav)+(section>article)🔁</p>
+            <h4>Result</h4>
+<xmp>
+<header>
+    <nav></nav>
+</header>
+<section>
+    <article></article>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>Dummy Text LOREM</h2>
+            <h4>Example</h4>
+            <p>lorem🔁</p>
+            <h4>Result</h4>
+<xmp>
+Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Consequatur
+doloremque, nam id libero ipsam quisquam cumque 
+consequuntur 
+similique eveniet tenetur iusto officia placeat 
+aspernatur,
+atque odio est accusamus repudiandae nostrum.
+</xmp>
+        </section>
+    </main>
+</body>
+</html>
