@@ -4,62 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01- Emmet</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-        body {
-            background-color: #499963;
-            background-image: background-color: #013303;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%230D4401' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230E5503'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-            color: #ffffff;
-            background-attachment: fixed;
-            font-family: "Quicksand";
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a.btn-home {
-                border: 2px solid rgb(0, 0, 0);
-                border-radius: 50%;
-                position: fixed;
-                display: flex;
-                width: 32px;
-                height: 32px;
-                opacity: .6;
-                padding: 0.4rem;
-                inset: 0.5rem;
-                transition: all 0.2s ease-in;
-                &:hover {
-                    transform: scale(1.1);
-                    opacity: 1;
-                }
-            }
-            section{
-                background-color: rgba(0, 0, 0, 0.305);
-                border-radius: 0.4rem;
-                padding: 0.4rem;
-                width: 360px;
-                h2, h4 {
-                    margin: 0;
-                }
-                h2 {
-                    border-bottom: 2px solid;
-                    padding-bottom: 0.4rem;
-                    margin: 0.4rem;
-                }
-            p {
-                font-size: 1.4rem;
-                padding: 0;
-                margin: 0.4rem 0;
-            }
-            xmp {
-                background-color: rgb(56, 226, 96);
-                color: black;
-                margin: 1;
-                font-size: 0.8rem;
-                padding: 0 0.6rem 0.6rem;
-            }
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../src/css/01-emmet.css">
 </head>
 <body>
     <a class="btn-home" href="../index.html">
@@ -67,7 +12,7 @@
     </a>
     <main>
         <h1>01- Emmet</h1>
-        <img src="logo-emmet.svg" alt="Emmet" width="240">
+        <img src="../src/imgs/logo-emmet.svg" alt="Emmet" width="240">
        <section>
             <h2>Nesting ></h2>
             <h4>Example</h4>
@@ -219,6 +164,28 @@ similique eveniet tenetur iusto officia placeat
 aspernatur,
 atque odio est accusamus repudiandae nostrum.
 </xmp>
+        </section>
+        <section>
+            <h2>RETO</h2>
+<xmp>
+
+header#header>nav.navbar.navbar-inverse>div.
+container>(div.navbar-header>(button
+[type="button"].navbar.navbar-toggle>(span.
+sr-only{Toggle navigation}+span.icon-bar*3)
++a.navbar-brand[href="index.php"]>img
+[src="imgs/logo.png"])+(div.collapse>ul.nav.
+navbar-nav>(li>a[href="index.html"].link
+{Inicio}+li.active.link>a[href="login.
+html"].link{Ingresar}+li>a[href="registro.
+html"].link{Registrarse}+li>a
+[href="contacto.html"].link{Contacto})))
+
+</xmp>
+
+    <h2>RESULTADO</h2>  
+    <img src="../src/imgs/Captura.png" alt="codigo" width="360px">
+
         </section>
     </main>
 </body>
