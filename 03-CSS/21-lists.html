@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-lists</title>
+
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        section{
+            background-color: #2b1838c7;
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            margin-bottom: 30px;
+        }
+
+        section h3{
+            color: white;
+
+            border-bottom: 2px dotted white;
+
+            padding-bottom: 5px;
+
+            margin-bottom: 20px;
+        }
+
+        .container{
+            border: 5px solid white;
+
+            background-color: #2c2430;
+
+            padding: 25px;
+        }
+
+        ul, ol{
+            margin-bottom: 25px;
+        }
+
+        li{
+            color: white;
+
+            margin-bottom: 10px;
+
+            font-size: 1.1rem;
+        }
+
+        /* ========================= */
+        /* LIST STYLE TYPE */
+        /* ========================= */
+
+        .square{
+            list-style-type: square;
+        }
+
+        .circle{
+            list-style-type: circle;
+        }
+
+        .roman{
+            list-style-type: upper-roman;
+        }
+
+        /* ========================= */
+        /* LIST STYLE POSITION */
+        /* ========================= */
+
+        .inside{
+            list-style-position: inside;
+
+            border: 2px solid cyan;
+
+            padding: 10px;
+        }
+
+        .outside{
+            list-style-position: outside;
+
+            border: 2px solid orange;
+
+            padding: 10px 40px;
+        }
+
+        /* ========================= */
+        /* LIST STYLE IMAGE */
+        /* ========================= */
+
+        .image-style{
+            list-style-image: url(../03-CSS/img/star.png);
+        }
+
+        /* ========================= */
+        /* LIST STYLE SHORTHAND */
+        /* ========================= */
+
+        .shorthand{
+            list-style: square inside;
+
+            border: 2px solid mediumseagreen;
+
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            viewBox="0 0 256 256">
+
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31
+                l58.35,58.34a8,8,0,0,1-11.32,11.32
+                l-72-72a8,8,0,0,1,0-11.32l72-72
+                a8,8,0,0,1,11.32,11.32L59.31,120H216
+                A8,8,0,0,1,224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>21-lists</h1>
+
+            <h2>
+                CSS allows you to customize the appearance of lists.
+            </h2>
+
+        </header>
+
+        <!-- LIST STYLE TYPE -->
+
+        <section>
+
+            <h3>List Style Type</h3>
+
+            <div class="container">
+
+                <ul class="square">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <ul class="circle">
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                    <li>Database</li>
+                </ul>
+
+                <ol class="roman">
+                    <li>Design</li>
+                    <li>Code</li>
+                    <li>Deploy</li>
+                </ol>
+
+            </div>
+
+        </section>
+
+        <!-- LIST STYLE POSITION -->
+
+        <section>
+
+            <h3>List Style Position</h3>
+
+            <div class="container">
+
+                <ul class="inside">
+                    <li>Inside list position</li>
+                    <li>Markers stay inside the box</li>
+                </ul>
+
+                <ul class="outside">
+                    <li>Outside list position</li>
+                    <li>Markers stay outside the box</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- LIST STYLE IMAGE -->
+
+        <section>
+
+            <h3>List Style Image</h3>
+
+            <div class="container">
+
+                <ul class="image-style">
+
+                    <li>Custom image marker</li>
+                    <li>Creative list style</li>
+                    <li>Styled with CSS</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- SHORTHAND -->
+
+        <section>
+
+            <h3>List Style Shorthand</h3>
+
+            <div class="container">
+
+                <ul class="shorthand">
+
+                    <li>Square marker</li>
+                    <li>Inside position</li>
+                    <li>Using shorthand property</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

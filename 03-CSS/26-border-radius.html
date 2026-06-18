@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26 Border Radius</title>
+  <link rel="stylesheet" href="../src/css/03-css.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 30px;
+      color: rgb(255, 255, 255);
+    }
+
+    .shape {
+      background: rgb(146, 146, 146);
+      width: 140px;
+      height: 140px;
+      margin: 20px auto;
+      transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+      cursor: pointer;
+      background: linear-gradient(135deg, rgb(146, 146, 146), rgb(120, 120, 145));
+    }
+
+    .shape1 {
+      border-radius: 50%;
+    }
+
+    .shape2 {
+      border-radius: 40px 0;
+    }
+
+    .shape3 {
+      border-radius: 140px 0 0 140px;
+    }
+
+    .shape4 {
+      border-radius: 140px 0 140px 140px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .shape1:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 12px #ff66cc, 0 0 25px #ff44aa, 0 0 40px #ff22aa;
+      background: radial-gradient(circle at 30% 30%, #ff99cc, #ff44aa);
+      animation: pulseNeon1 0.7s infinite alternate;
+    }
+
+    .shape2:hover {
+      transform: scale(1.07) rotate(2deg);
+      box-shadow: 0 0 12px #0ff, 0 0 25px #0ff, 0 0 40px #00ccff;
+      background: linear-gradient(135deg, #33ddff, #0099ff);
+      animation: wobbleCyan 0.5s ease-in-out infinite;
+    }
+
+    .shape3:hover {
+      transform: scale(1.07) translateY(-4px);
+      box-shadow: 0 0 12px #00ffaa, 0 0 25px #00ff88, 0 0 40px #22ff99;
+      background: linear-gradient(145deg, #44ffaa, #00cc77);
+      animation: bounceGreen 0.6s ease infinite;
+    }
+
+    .shape4:hover {
+      transform: scale(1.07) translateX(3px);
+      box-shadow: 0 0 12px #ffaa33, 0 0 25px #ffaa22, 0 0 40px #ff8800;
+      background: linear-gradient(125deg, #ffcc55, #ff9933);
+      animation: shakeAmber 0.45s ease-in-out infinite;
+    }
+
+    @keyframes pulseNeon1 {
+      0% {
+        box-shadow: 0 0 5px #ff66cc, 0 0 12px #ff44aa;
+        transform: scale(1.05);
+      }
+      100% {
+        box-shadow: 0 0 18px #ff88dd, 0 0 35px #ff66cc, 0 0 50px #ff44aa;
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes wobbleCyan {
+      0% {
+        transform: scale(1.07) rotate(-1deg);
+        box-shadow: 0 0 8px #0ff, 0 0 20px #0ff;
+      }
+      50% {
+        transform: scale(1.09) rotate(2deg);
+        box-shadow: 0 0 20px #33ffff, 0 0 35px #00ccff;
+      }
+      100% {
+        transform: scale(1.07) rotate(-1deg);
+        box-shadow: 0 0 8px #0ff, 0 0 20px #0ff;
+      }
+    }
+
+    @keyframes bounceGreen {
+      0%, 100% {
+        transform: scale(1.07) translateY(0px);
+        box-shadow: 0 0 8px #00ffaa, 0 0 18px #00ff88;
+      }
+      50% {
+        transform: scale(1.1) translateY(-8px);
+        box-shadow: 0 0 22px #55ffbb, 0 0 38px #00ff99;
+      }
+    }
+
+    @keyframes shakeAmber {
+      0%, 100% {
+        transform: scale(1.07) translateX(0px);
+        box-shadow: 0 0 8px #ffaa33, 0 0 18px #ffaa22;
+      }
+      25% {
+        transform: scale(1.08) translateX(-4px);
+        box-shadow: 0 0 20px #ffcc55, 0 0 32px #ffaa33;
+      }
+      75% {
+        transform: scale(1.08) translateX(4px);
+        box-shadow: 0 0 20px #ffcc55, 0 0 32px #ffaa33;
+      }
+    }
+
+    .shape:hover {
+      background-blend-mode: overlay;
+    }
+
+    section:last-child {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>26 Border Radius</h1>
+    <h2>Property defines the radius of the element's corners.</h2>
+  </header>
+
+  <a href="../03-css/index.html" class="btn-home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+      <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+    </svg>
+  </a>
+
+  <div class="contenedor">
+    <section>
+      <p>border-radius: 50%</p>
+      <div class="shape shape1"></div>
+    </section>
+
+    <section>
+      <p>border-radius: 40px 0</p>
+      <div class="shape shape2"></div>
+    </section>
+
+    <section>
+      <p>border-radius: 140px 0 0 140px</p>
+      <div class="shape shape3"></div>
+    </section>
+
+    <section>
+      <p>border-radius: 140px 0 140px 140px</p>
+      <div class="shape shape4"></div>
+    </section>
+  </div>
+</body>
+</html>

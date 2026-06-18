@@ -3,30 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01-Document Style</title>
+    <title>14-background</title>
+
     <link rel="stylesheet" href="../src/css/03-css.css">
+
     <style>
-        
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        div.box{
+            width: 320px;
+            height: 220px;
+
+            border: 6px solid white;
+            border-radius: 20px;
+
+            box-shadow: 0 0 15px #00000088;
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            padding-bottom: 15px;
+
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* BACKGROUND COLOR */
+
+        div.bg-color{
+            background-color: #564771;
+        }
+
+        /* BACKGROUND IMAGE */
+
+        div.bg-image{
+            background-image: url(../03-CSS/img/maripposa.jpg);
+        }
+
+        /* BACKGROUND REPEAT */
+
+        div.bg-repeat{
+            background-image: url(../03-CSS/img/maripposa.jpg);
+            background-size: 80px;
+            background-repeat: repeat;
+        }
+
+        /* BACKGROUND POSITION */
+
+        div.bg-position{
+            background-color: #564771;
+            background-image: url(../03-CSS/img/maripposa.jpg);
+            background-repeat: no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        /* BACKGROUND SIZE */
+
+        div.bg-size{
+            background-color: #581c87;
+            background-image: url(../03-CSS/img/maripposa.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        div.h2 {
+            text-align: center;
+        }
+    
+
     </style>
+
 </head>
+
 <body>
+
     <a href="../03-css/index.html" class="btn-home">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            viewBox="0 0 256 256">
+
             <path
-                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+                d="M224,128a8,8,0,0,1-8,8H59.31
+                l58.35,58.34a8,8,0,0,1-11.32,11.32
+                l-72-72a8,8,0,0,1,0-11.32l72-72
+                a8,8,0,0,1,11.32,11.32L59.31,120H216
+                A8,8,0,0,1,224,128Z">
             </path>
-        </svg> 
+
+        </svg>
+
     </a>
+
     <main>
+
         <header>
-            <h1>01 Document Style</h1>
-            <h2>This way we can include CSS within the style tag, it is very useful when you only have an html document.</h2>
+
+            <h1>14-background</h1>
+
+            <h2>
+                <ul>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-repeat</li>
+                    <li>background-position</li>
+                    <li>background-size</li>
+                </ul>
+            </h2>
+
         </header>
-        <section>
-            <div class="adso">
-                ADSO 3314566
+
+        <section class="gallery">
+
+            <div class="box bg-color">
+                background-color
             </div>
+
+            <div class="box bg-image">
+                background-image
+            </div>
+
+            <div class="box bg-repeat">
+                background-repeat
+            </div>
+
+            <div class="box bg-position">
+                background-position
+            </div>
+
+            <div class="box bg-size">
+                background-size
+            </div>
+
         </section>
+
     </main>
+
 </body>
 </html>

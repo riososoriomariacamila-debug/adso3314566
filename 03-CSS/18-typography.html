@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-typography</title>
+
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        section{
+            background-color: #2b1838c7;
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            margin-bottom: 30px;
+        }
+
+        section h3{
+            color: white;
+
+            border-bottom: 2px dotted white;
+
+            padding-bottom: 5px;
+
+            margin-bottom: 20px;
+        }
+
+        .container{
+            border: 5px solid white;
+
+            background-color: #2c2430;
+
+            padding: 25px;
+
+            min-height: 150px;
+        }
+
+        p{
+            margin-bottom: 15px;
+        }
+
+        /* ========================= */
+        /* COLOR */
+        /* ========================= */
+
+        .color-text{
+            color: cyan;
+
+            font-size: 1.3rem;
+        }
+
+        /* ========================= */
+        /* FONT FAMILY */
+        /* ========================= */
+
+        .family1{
+            font-family: Arial, sans-serif;
+
+            color: white;
+        }
+
+        .family2{
+            font-family: 'Pacifico', cursive;
+
+            color: #ff80bf;
+        }
+
+        .family3{
+            font-family: 'Poppins', sans-serif;
+
+            color: #90ee90;
+        }
+
+        /* ========================= */
+        /* FONT SIZE */
+        /* ========================= */
+
+        .small{
+            font-size: 14px;
+
+            color: white;
+        }
+
+        .medium{
+            font-size: 24px;
+
+            color: cyan;
+        }
+
+        .large{
+            font-size: 40px;
+
+            color: orange;
+        }
+
+        /* ========================= */
+        /* FONT WEIGHT */
+        /* ========================= */
+
+        .light{
+            font-weight: 300;
+
+            color: white;
+        }
+
+        .normal{
+            font-weight: 500;
+
+            color: cyan;
+        }
+
+        .bold{
+            font-weight: 700;
+
+            color: gold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            viewBox="0 0 256 256">
+
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31
+                l58.35,58.34a8,8,0,0,1-11.32,11.32
+                l-72-72a8,8,0,0,1,0-11.32l72-72
+                a8,8,0,0,1,11.32,11.32L59.31,120H216
+                A8,8,0,0,1,224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>18-typography</h1>
+
+            <h2>
+                Typography properties allow you to style text in CSS.
+            </h2>
+
+        </header>
+
+        <!-- COLOR -->
+
+        <section>
+
+            <h3>Color</h3>
+
+            <div class="container">
+
+                <p class="color-text">
+                    CSS color changes the appearance of text.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FONT FAMILY -->
+
+        <section>
+
+            <h3>Font Family</h3>
+
+            <div class="container">
+
+                <p class="family1">
+                    This text uses Arial font.
+                </p>
+
+                <p class="family2">
+                    This text uses Pacifico font.
+                </p>
+
+                <p class="family3">
+                    This text uses Poppins font.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FONT SIZE -->
+
+        <section>
+
+            <h3>Font Size</h3>
+
+            <div class="container">
+
+                <p class="small">
+                    Small text size.
+                </p>
+
+                <p class="medium">
+                    Medium text size.
+                </p>
+
+                <p class="large">
+                    Large text size.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FONT WEIGHT -->
+
+        <section>
+
+            <h3>Font Weight</h3>
+
+            <div class="container">
+
+                <p class="light">
+                    Light font weight.
+                </p>
+
+                <p class="normal">
+                    Medium font weight.
+                </p>
+
+                <p class="bold">
+                    Bold font weight.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

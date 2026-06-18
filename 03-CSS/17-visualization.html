@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-visualization</title>
+
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        section{
+            background-color: #2b1838c7;
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            margin-bottom: 30px;
+        }
+
+        section h3{
+            color: white;
+
+            border-bottom: 2px dotted white;
+
+            padding-bottom: 5px;
+
+            margin-bottom: 20px;
+        }
+
+        .container{
+            border: 5px solid white;
+
+            background-color: #2c2430;
+
+            padding: 20px;
+
+            min-height: 220px;
+        }
+
+        /* ========================= */
+        /* DISPLAY */
+        /* ========================= */
+
+        .block{
+            display: block;
+
+            background-color: crimson;
+
+            color: white;
+
+            padding: 15px;
+
+            margin-bottom: 10px;
+        }
+
+        .inline{
+            display: inline;
+
+            background-color: royalblue;
+
+            color: white;
+
+            padding: 15px;
+        }
+
+        .none{
+            display: none;
+        }
+
+        /* ========================= */
+        /* FLEX */
+        /* ========================= */
+
+        .flex-container{
+            display: flex;
+
+            gap: 15px;
+        }
+
+        .flex-box{
+            width: 100px;
+            height: 100px;
+
+            background-color: darkorange;
+
+            color: white;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ========================= */
+        /* GRID */
+        /* ========================= */
+
+        .grid-container{
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+        .grid-box{
+            height: 100px;
+
+            background-color: mediumseagreen;
+
+            color: white;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ========================= */
+        /* VISIBILITY */
+        /* ========================= */
+
+        .visible-box,
+        .hidden-box{
+            width: 120px;
+            height: 120px;
+
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-weight: bold;
+
+            margin-right: 20px;
+        }
+
+        .visible-box{
+            background-color: deeppink;
+
+            visibility: visible;
+        }
+
+        .hidden-box{
+            background-color: gray;
+
+            visibility: hidden;
+        }
+
+        /* ========================= */
+        /* OVERFLOW */
+        /* ========================= */
+
+        .overflow-box{
+            width: 300px;
+            height: 120px;
+
+            background-color: #111;
+
+            color: white;
+
+            padding: 15px;
+
+            overflow: scroll;
+
+            border: 3px solid white;
+        }
+
+        /* ========================= */
+        /* Z-INDEX */
+        /* ========================= */
+
+        .zindex-container{
+            position: relative;
+
+            height: 220px;
+        }
+
+        .z-box{
+            width: 140px;
+            height: 140px;
+
+            position: absolute;
+
+            color: white;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .z1{
+            background-color: crimson;
+
+            top: 20px;
+            left: 20px;
+
+            z-index: 1;
+        }
+
+        .z2{
+            background-color: royalblue;
+
+            top: 50px;
+            left: 70px;
+
+            z-index: 2;
+        }
+
+        .z3{
+            background-color: darkorange;
+
+            top: 80px;
+            left: 120px;
+
+            z-index: 3;
+        }
+
+        p{
+            color: white;
+            line-height: 1.7;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            viewBox="0 0 256 256">
+
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31
+                l58.35,58.34a8,8,0,0,1-11.32,11.32
+                l-72-72a8,8,0,0,1,0-11.32l72-72
+                a8,8,0,0,1,11.32,11.32L59.31,120H216
+                A8,8,0,0,1,224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>17-visualization</h1>
+
+            <h2>
+                CSS properties for visualization and layout.
+            </h2>
+
+        </header>
+
+        <!-- DISPLAY -->
+
+        <section>
+
+            <h3>Display</h3>
+
+            <div class="container">
+
+                <div class="block">Display Block</div>
+
+                <span class="inline">Inline</span>
+
+                <div class="none">
+                    Hidden with display none
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FLEX -->
+
+        <section>
+
+            <h3>Display Flex</h3>
+
+            <div class="container flex-container">
+
+                <div class="flex-box">1</div>
+                <div class="flex-box">2</div>
+                <div class="flex-box">3</div>
+
+            </div>
+
+        </section>
+
+        <!-- GRID -->
+
+        <section>
+
+            <h3>Display Grid</h3>
+
+            <div class="container grid-container">
+
+                <div class="grid-box">1</div>
+                <div class="grid-box">2</div>
+                <div class="grid-box">3</div>
+                <div class="grid-box">4</div>
+                <div class="grid-box">5</div>
+                <div class="grid-box">6</div>
+
+            </div>
+
+        </section>
+
+        <!-- VISIBILITY -->
+
+        <section>
+
+            <h3>Visibility</h3>
+
+            <div class="container">
+
+                <div class="visible-box">
+                    Visible
+                </div>
+
+                <div class="hidden-box">
+                    Hidden
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW -->
+
+        <section>
+
+            <h3>Overflow</h3>
+
+            <div class="container">
+
+                <div class="overflow-box">
+
+                    <p>
+                        Overflow controls what happens when content is too large
+                        for an element. Scroll adds bars to navigate through the
+                        hidden content inside the container.
+                    </p>
+
+                    <p>
+                        CSS makes layouts more dynamic and interactive.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Z-INDEX -->
+
+        <section>
+
+            <h3>Z-Index</h3>
+
+            <div class="container zindex-container">
+
+                <div class="z-box z1">
+                    z-index 1
+                </div>
+
+                <div class="z-box z2">
+                    z-index 2
+                </div>
+
+                <div class="z-box z3">
+                    z-index 3
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01-Document Style</title>
+    <title>12_colors_alpha</title>
     <link rel="stylesheet" href="../src/css/03-css.css">
-    <style>
-        
-    </style>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure.mariposa {
+        background-image: url(../03-CSS/img/mariposaciber.png);
+        background-repeat: no-repeat;
+
+        /* CENTRAR LA IMAGEN */
+        background-position: center;
+
+        /* AJUSTAR TAMAÑO */
+        background-size: contain;
+
+        border: 4px solid white;
+        margin: 4rem auto;
+
+        height: 450px;
+        width: 450px;
+
+        overflow: hidden;
+    }
+
+    figure.mariposa div{
+        height: calc(450px / 3);
+    }
+
+    figure.mariposa .box1{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    figure.mariposa .box2{
+        background-color: #ffffff77;
+    }
+
+    figure.mariposa .box3{
+        background-color: hsla(0, 0%, 100%, 0.267);
+    }
+</style>
+
 </head>
 <body>
     <a href="../03-css/index.html" class="btn-home">
@@ -19,14 +58,19 @@
     </a>
     <main>
         <header>
-            <h1>01 Document Style</h1>
-            <h2>This way we can include CSS within the style tag, it is very useful when you only have an html document.</h2>
+            <h1>12-colors-alpha</h1>
+            <h2>The fourth alpha channel allows you to apply opacity or transparency to the color.</h2>
+        </main>
         </header>
-        <section>
-            <div class="adso">
-                ADSO 3314566
-            </div>
-        </section>
+            <section>
+                <h3>example transparent color</h3>
+
+                <figure class="mariposa">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </figure>
+            </section>
     </main>
 </body>
 </html>
