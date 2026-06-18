@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-text-shadow</title>
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+
+        section h4 {
+            margin: 1rem 0;
+            text-align: center;
+            font-weight: 900;
+            font-size: 5rem;
+        }
+
+        /* Basic Shadow */
+        h4.shadow1 {
+            color: #333;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, .5);
+        }
+
+        /* Soft Shadow */
+        h4.shadow2 {
+            color: #5c3d99;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, .4);
+        }
+
+        /* Multiple Shadows */
+        h4.shadow3 {
+            color: #fff;
+            text-shadow:
+                2px 2px 0 red,
+                4px 4px 0 green,
+                6px 6px 0 blue;
+        }
+
+        /* Neon Effect */
+        h4.shadow4 {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px cyan,
+                0 0 40px cyan;
+        }
+
+        /* 3D Effect */
+        h4.shadow5 {
+            color: #666;
+            text-shadow:
+                1px 1px 0 #999,
+                2px 2px 0 #888,
+                3px 3px 0 #777,
+                4px 4px 0 #666,
+                5px 5px 0 #555;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white"
+            viewBox="0 0 256 256">
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+        </svg>
+    </a>
+
+    <main>
+
+        <header>
+            <h1>30 Text Shadow</h1>
+            <h2>Adds shadows to text</h2>
+        </header>
+
+        <section>
+
+            <h3>Basic Text Shadow</h3>
+            <h4 class="shadow1">ADSO</h4>
+
+            <h3>Soft Text Shadow</h3>
+            <h4 class="shadow2">ADSO</h4>
+
+            <h3>Multiple Shadows</h3>
+            <h4 class="shadow3">ADSO</h4>
+
+            <h3>Neon Effect</h3>
+            <h4 class="shadow4">ADSO</h4>
+
+            <h3>3D Effect</h3>
+            <h4 class="shadow5">ADSO</h4>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

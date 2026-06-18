@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-clip-path</title>
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+
+        section div {
+    width: 320px;
+    height: 220px;
+    margin: 2rem auto;
+    background: url("../src/imgs/edna.jpg") center/cover;
+
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+        section div:hover {
+            transform: scale(1.05);
+        }
+
+        /* Circle */
+
+        div.circle {
+            clip-path: circle(40%);
+        }
+        div.circle:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+        /* Ellipse */
+
+        div.ellipse {
+            clip-path: ellipse(40% 50%);
+        }
+        div.ellipse:hover {
+    transform: rotate(-20deg) scale(1.15);
+}
+
+        /* Triangle */
+
+        div.triangle {
+            clip-path: polygon(
+                50% 0%,
+                0% 100%,
+                100% 100%
+            );
+        }
+        div.triangle:hover {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+        /* Diamond */
+
+        div.diamond {
+            clip-path: polygon(
+                50% 0%,
+                100% 50%,
+                50% 100%,
+                0% 50%
+            );
+        }
+        div.diamond:hover {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    transform: rotate(45deg);
+}
+
+        /* Pentagon */
+
+        div.pentagon {
+            clip-path: polygon(
+                50% 0%,
+                100% 38%,
+                82% 100%,
+                18% 100%,
+                0% 38%
+            );
+        }
+        div.pentagon:hover {
+    transform: scale(1.25);
+}
+
+        /* Star */
+
+        div.star {
+    width: 250px;
+    height: 250px;
+
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+div.star:hover {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    transform: rotate(360deg) scale(1.1);
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+        </svg>
+    </a>
+
+    <main>
+
+        <header>
+            <h1>32 Clip Path</h1>
+            <h2>Property lets you clip an element to a basic shape</h2>
+        </header>
+
+        <section>
+
+            <h3>Circle</h3>
+            <div class="circle"></div>
+
+            <h3>Ellipse</h3>
+            <div class="ellipse"></div>
+
+            <h3>Triangle</h3>
+            <div class="triangle"></div>
+
+            <h3>Diamond</h3>
+            <div class="diamond"></div>
+
+            <h3>Pentagon</h3>
+            <div class="pentagon"></div>
+
+            <h3>Star</h3>
+            <div class="star"></div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
